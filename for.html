@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORM TASK</title>
+</head>
+
+<style>
+  label{
+    color:rgb(7, 7, 7)
+  }
+  form{
+   background-image:url("given.jpg");
+   background-size: cover;
+   width:500px
+   
+  }
+  body{
+    background-image: url("group.jpg");
+  /* background-color: #cccccc; */
+  height: 500px;
+  width: 795px;
+  /* background-position: center;
+  background-repeat: no-repeat; */
+  background-size: cover;
+  background-attachment:fixed;
+  /* position: relative; */ 
+  }
+  
+
+</style>
+<body>
+  <center>
+    <form action="/action_page.php" target="_blank" method="post">
+      <h3 style=color:white>freeCodeCamp Survey Form</h3>
+      <h5 style="color:white">Thank you for taking the time to help us improve the platform</h5>
+      <label for="fname" >First Name</label><br>
+      <input type="text" id="name"  placeholder="Enter your Name"><br><br>
+      
+      <label for="email" >Email</label><br>
+      <input type="email" id="email"  placeholder="Enter your Email"><br><br>
+      
+      <label for="age" >Age(optional)</label><br>
+      <!-- <input type="number" id="number"  placeholder="Age"><br><br> -->
+      <input type="number" id="quantity" name="quantity" placeholder="Age" min="1" ><br><br>
+      
+      
+      <label >Which option best describes your current role?</label><br>
+      <!-- <input placeholder="Select current role"> -->
+      <select >
+        
+      <option value="role">Select an option</option>
+      <option value="Python">Python</option>
+      <option value="Java" >Java</option>
+      <option value="HTML" >HTML</option>
+      
+      
+      </select><br><br>
+      
+      
+      <label>would you recommend freeCodeCamp to a friend?</label><br>
+      <input type="radio" id="Definetly"  name="role" value="Definitely">
+      <label for="Definitely"> Definitely</label><br>
+      
+      <input type="radio" id="Maybe" name="role" value="Maybe">
+      <label for="Maybe"> Maybe</label><br>
+      
+      <input type="radio" id="Not Sure" name="role" value="Not Sure">
+      <label for="Not Sure"> Not Sure</label><br>
+      <br><br>
+      
+      <label>What is favorite feature of freeCodeCamp?</label> <br>
+    <select>
+      <option value="role">Select an option</option>
+      <option value="Python">Python</option>
+      <option value="Java" >Java</option>
+      <option value="HTML" >HTML</option>
+     </select>
+     <br><br>
+    
+      <label> What would you like to see improved(check all that apply)</label><br>
+      <input type="checkbox" id="improvement1" name="" value="">
+        <label > Front-end project</label><br>
+        <input  type="checkbox"improvement" name="" value="">
+        <label > Back-end projects</label><br>
+        <input type="checkbox" id="improvement" name="" value="">
+        <label > Data visualization</label><br>
+        <input type="checkbox" id="improvement" name="" value="">
+        <label > Challenges</label><br>
+        <input type="checkbox" id="improvement" name="" value="">
+        <label > Open source community</label><br>
+        <input type="checkbox" id="improvement" name="" value="">
+        <label > Gitter help rooms</label><br>
+        <input type="checkbox" id="improvement" name="" value="">
+        <label >Videos</label><br>
+        <input type="checkbox" id="improvement" name="" value="">
+        <label > City meetups</label><br>
+        
+        <br><br>
+      <label>Any comments or suggestion?</label><br>
+      <textarea cols="25" rows="5" value="comments" required></textarea><br><br>
+      
+          <input style="background-color: darkgreen;" type="submit" value="SUBMIT">
+          
+         
+  
+
+
+</form>
+</center>
+  </body>
+  
+    
+
+</body>
+</html>

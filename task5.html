@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div p {
+  background-color:grey;
+}
+div +p {
+  background-color:crimson;
+}
+h3 {
+  background-color:blue;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  width:200px
+}
+
+h3:hover {
+  background-color:rgb(157, 255, 0);
+}
+/* p:first-child {
+  color: blue;
+}  */
+p i:first-child {
+    color: blue;
+  } 
+  ::marker { 
+  color: red;
+  font-size: 23px;}
+/* }h4::after {
+  content: url(smiley.jpg);
+  
+} */
+img {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+div.background {
+  background: url(s2.jpg) repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 40px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox p {
+    
+  margin: 5%;
+  
+  font-weight: bold;
+  
+  color: #000000
+  
+}
+  
+</style>
+</head>
+<body>
+
+ <h2>Descendant Selector</h2>
+<p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <section><p>Paragraph 3 in the div.</p></section>
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<h2>Adjacent Sibling Selector</h2>
+  
+<div >
+    <p>Paragraph 5 in the div.</p>
+    <p>Paragraph 6 in the div.</p>
+  </div>
+  
+  <p>Paragraph 7. After a div.</p>
+  <p>Paragraph 8. After a div.</p>
+  <h3>Mouse Over Me</h3> 
+  
+ 
+   <!-- <p>This is some text.</p>
+<p>This is some text.</p> --> 
+
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<div class="background">
+    <div class="transbox">
+      <p>Transparent box.</p>
+    </div>
+  </div>
+
+<ul>
+    <li>past tense</li>
+    <li>present tense</li>
+    <li>future tense</li>
+  </ul>
+  
+  <ol>
+    <li>First</li>
+    <li>Second</li>
+    <li>Third</li>
+  </ol>
+  <!-- <h4>This is a heading</h4> -->
+  <img src="smiley.jpg" alt="smiley" width="170" height="100">
+  <img src="s8.jpg" alt="s8" width="170" height="100">
+</body>
+</html>
